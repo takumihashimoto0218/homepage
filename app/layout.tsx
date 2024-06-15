@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "takumiのポートフォリオ",
-  description: "next.js13でポートフォリオ作成",
+  title: "株式会社Nextech",
+  description: "新しい挑戦をする人をITを使ってサポート",
   icons: {
     icon: "/icon.png",
   },

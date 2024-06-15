@@ -10,7 +10,7 @@ const footerStyle: CSSProperties = {
 const Footer = () => {
   return (
     <footer style={footerStyle}>
-      &copy; 2023 takumi hashimoto
+      &copy; 2024 takumi hashimoto
     </footer>
   );
 };

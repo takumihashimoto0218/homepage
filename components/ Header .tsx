@@ -6,9 +6,8 @@ const Header = () => {
     background: 'black',
     color: 'white',
     padding: '20px',
-    fontSize: '24px',
+    fontSize: '40px',
     textAlign: 'center',
-    textTransform: 'uppercase',
     letterSpacing: '2px',
     fontWeight: 'bold',
     fontFamily: 'Arial, sans-serif',
@@ -16,7 +15,7 @@ const Header = () => {
 
   return (
     <div style={headerStyle}>
-      <Link href="/">takumiのポートフォリオ</Link>
+      <Link href="/">株式会社Nextech</Link>
     </div>
   );
 };
