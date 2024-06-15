@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 // Propsの型を定義
 interface ModalProps {
-	onClose: () => void; // onCloseは関数で、戻り値はvoid（何も返さない）
-	content: string; // contentはstring型
+	onClose: () => void;
+	content: React.ReactNode;
 }
 
 const Modal: React.FC<ModalProps> = ({ onClose, content }) => {
@@ -36,8 +36,7 @@ const Modal: React.FC<ModalProps> = ({ onClose, content }) => {
 				}}
 				onClick={(e) => e.stopPropagation()}
 			>
-				<h2 className="text-center text-2xl ">{content}</h2>
-
+				{content}
 			</div>
 		</motion.div>
 	);

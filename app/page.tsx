@@ -19,7 +19,9 @@ export default function Home() {
 				setModalContent(<DetailContent />);
 				break;
 			case "contact":
-				setModalContent("shimayo02180218@gmail.com");
+				setModalContent(
+					<span className="text-3xl font-bold">shimayo02180218@gmail.com</span>
+				);
 				break;
 			default:
 				setModalContent("内容が設定されていません");
@@ -40,11 +42,10 @@ export default function Home() {
 					layout="fill"
 					objectFit="cover"
 					priority={true}
-					className="z-[-10] brightness-50" // Adjusting brightness and scaling
+					className="z-[-10] brightness-50"
 				/>
 			</div>
 
-			{/* Buttons for modals */}
 			<button
 				className="text-2xl border-4 border-red-100 p-10 rounded-md absolute top-[50%] left-[30%] translate-x-[-50%] translate-y-[-50%] text-white font-bold mb-5"
 				onClick={() => handleOpenModal("introduction")}
@@ -64,7 +65,6 @@ export default function Home() {
 				お問い合わせ
 			</button>
 
-			{/* Modal display */}
 			<AnimatePresence>
 				{isModalOpen && (
 					<Modal onClose={handleCloseModal} content={modalContent} />

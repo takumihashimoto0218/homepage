@@ -12,7 +12,7 @@ import {
 const DetailContent = () => {
 	return (
 		<div>
-			<div className="mb-10">会社概要</div>
+			<div className="mb-10 text-center font-bold text-4xl">会社概要</div>
 			<Table>
 				<TableBody>
 					<TableRow>

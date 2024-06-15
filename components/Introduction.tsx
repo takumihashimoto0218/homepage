@@ -1,11 +1,9 @@
 import Image from 'next/image';
-import IconIntroduction from './IconIntroduction';
-import PageLink from './PageLink';
 
 const Introduction = () => {
   return (
 		<div className="items-center justify-center font-bold text-3xl mb-10">
-      <div>会社紹介</div>
+      <div className='text-center font-bold text-4xl mb-10'>会社紹介</div>
 			<div className="max-w-screen-lg p-4 text-center">
 				<div className="mb-8 flex justify-center items-center">
 					<div className="rounded-full overflow-hidden w-40 h-40">
