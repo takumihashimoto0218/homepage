@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import Modal from "@/components/Modal";
 import DetailContent from "@/components/DetailContent";
 import Introduction from "@/components/Introduction";
@@ -35,7 +35,7 @@ export default function Home() {
 
 	return (
 		<div className="relative h-screen w-full overflow-hidden">
-			<div className="absolute inset-0">
+			<div className=" inset-0">
 				<Image
 					src="/img/homepagebg.jpg"
 					alt="Background"
