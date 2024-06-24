@@ -46,24 +46,47 @@ export default function Home() {
 				/>
 			</div>
 
+			{/* PC版のボタン */}
 			<button
-				className="text-2xl border-4 border-red-100 p-10 rounded-md absolute top-[50%] left-[30%] translate-x-[-50%] translate-y-[-50%] text-white font-bold mb-5"
+				className="text-2xl border-4 border-red-100 p-10 rounded-md absolute top-[50%] left-[30%] translate-x-[-50%] translate-y-[-50%] text-white font-bold mb-5 md:block hidden"
 				onClick={() => handleOpenModal("introduction")}
 			>
 				会社紹介
 			</button>
 			<button
-				className="text-2xl border-4 border-red-100 p-10 rounded-md absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white font-bold mb-5"
+				className="text-2xl border-4 border-red-100 p-10 rounded-md absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white font-bold mb-5 md:block hidden"
 				onClick={() => handleOpenModal("details")}
 			>
 				会社概要
 			</button>
 			<button
-				className="text-2xl border-4 border-red-100 p-10 rounded-md absolute top-[50%] left-[70%] translate-x-[-50%] translate-y-[-50%] text-white font-bold mb-5"
+				className="text-2xl border-4 border-red-100 p-10 rounded-md absolute top-[50%] left-[70%] translate-x-[-50%] translate-y-[-50%] text-white font-bold mb-5 md:block hidden"
 				onClick={() => handleOpenModal("contact")}
 			>
 				お問い合わせ
 			</button>
+
+			{/* スマホ版のボタン */}
+			<div className="flex flex-col items-center justify-center h-full space-y-4 md:hidden">
+				<button
+					className="text-lg border-4 border-red-100 p-4 rounded-md text-white font-bold w-full sm:w-4/5 mx-auto"
+					onClick={() => handleOpenModal("introduction")}
+				>
+					会社紹介
+				</button>
+				<button
+					className="text-lg border-4 border-red-100 p-4 rounded-md text-white font-bold w-full sm:w-4/5 mx-auto"
+					onClick={() => handleOpenModal("details")}
+				>
+					会社概要
+				</button>
+				<button
+					className="text-lg border-4 border-red-100 p-4 rounded-md text-white font-bold w-full sm:w-4/5 mx-auto"
+					onClick={() => handleOpenModal("contact")}
+				>
+					お問い合わせ
+				</button>
+			</div>
 
 			<AnimatePresence>
 				{isModalOpen && (
