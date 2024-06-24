@@ -46,7 +46,7 @@ const Modal: React.FC<ModalProps> = ({ onClose, content }) => {
 						right: "10px",
 						background: "none",
 						border: "none",
-						fontSize: "1.5rem",
+						fontSize: "1.0rem",
 						cursor: "pointer",
 					}}
 				>

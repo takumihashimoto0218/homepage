@@ -20,7 +20,7 @@ export default function Home() {
 				break;
 			case "contact":
 				setModalContent(
-					<span className="text-3xl font-bold">shimayo02180218@gmail.com</span>
+					<span className="md:text-lg text-2xl font-bold">shimayo02180218@gmail.com</span>
 				);
 				break;
 			default:
